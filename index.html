@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PIZZA HOUSE</title>
   <link rel="stylesheet" href="css/styles.css">
+  <script src="./js/scripts.js" charset="utf-8"></script>
 </head>
 
 <body>
@@ -49,6 +50,7 @@
           <h4><b> pizza crusts</b></h4>
           <form id="form" class="crust">
             <select name="Crust" class="form-control">
+              <option label="None" value="0"></option>
               <option label="Crispy  -  150" value="150"></option>
               <option label="Stuffed  -  200" value="200"></option>
               <option label="Glutten-free  - 250" value="250"></option>
@@ -94,7 +96,7 @@
         <input type="House number" class="form-control" id="hse"><br>
         <label>Phone</label><br>
         <input type="number" class="form-control" id="phone"><br>
-        <button onclick="myFunction()">Confirm Delivery</button>
+        <button onclick="validate()">Confirm Delivery</button>
       </form><br>
     </div><br><br>
 
