@@ -1,11 +1,113 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>PIZZA HOUSE</title>
-  </head>
-  <body>
 
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PIZZA HOUSE</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="head">
+      <h2>PIZZA HOUSE</h2>
+    </div>
+
+  </header>
+  <!-- END OF HEADER -->
+
+
+  <div class="container">
+    <h1>Are you hungry?</h1>
+    <h3>order your favourite pizza here</h3>
+    <div id="order">
+
+      <div class="row">
+        <div class="col-md-4">
+
+          <form id="form" class="type">
+            <select class="form-control">
+              <option label="hawaiaan Large  -  1000" value="1000"></option>
+              <option label="hawaiaan Medium  - 800" value="800"></option>
+              <option label="hawaiaan Small  -  600" value="600"></option>
+              <option label="chicken tikka Large  -  1000" value="1000"></option>
+              <option label="chicken tikka Medium  - 800" value="800"></option>
+              <option label="chicken tikka small  -  600" value="600"></option>
+              <option label="Chicken peri peri Large  -  1000" value="1000"></option>
+              <option label="Chicken Peri peri Medium  - 800" value="800"></option>
+              <option label="Chicken Peri peri Small  -  600" value="600"></option>
+              <option label="Veg tikka Large  -  1000" value="1000"></option>
+              <option label="Veg tikka  Medium  - 800" value="800"></option>
+              <option label="Veg tikka  Small  -  600" value="600"></option>
+
+            </select>
+          </form>
+        </div>
+        <div class="col-md-4">
+          <h4><b> pizza crusts</b></h4>
+          <form id="form" class="crust">
+            <select name="Crust" class="form-control">
+              <option label="Crispy  -  150" value="150"></option>
+              <option label="Stuffed  -  200" value="200"></option>
+              <option label="Glutten-free  - 250" value="250"></option>
+            </select>
+
+          </form>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <h4><b>Select Toppings of choice!</b></h4>
+        <form id="form" class="topping">
+          <div class="row">
+            <div class="col-md-6">
+              <input type="checkbox" name="toppings" class="form control" label="Mushrooms" value="150">Mushrooms<br>
+              <input type="checkbox" name="toppings" class="form control" label="Onions" value="100">Onions<br>
+              <input type="checkbox" name="toppings" class="form control" label="Sweetcorn" value="150">Sweetcorn<br>
+              <input type="checkbox" name="toppings" class="form control" label="jalapeno chilli" value="150">jalapeno chilli<br>
+            </div>
+            <div class="col-md-6">
+              <input type="checkbox" name="toppings" class="form control" label="Cheese" value="150">Cheese<br>
+              <input type="checkbox" name="toppings" class="form control" label="green pepper" value="100">green pepper<br>
+              <input type="checkbox" name="toppings" class="form control" label="Olives" value="150">Olives<br>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-secondary" id="order">Order</button>
+        </form>
+      </div><br><br><br><br><br><br><br><br><br>
+      <button class="btn btn-secondary" id="order2">Another Pizza?</button><br><br>
+      <div id="2nd"></div>
+      <button type="submit" class="btn btn-secondary" id="2nd">Order</button>
+
+    </div><br><br>
+
+    <div class="location"><br>
+      <p id="p"><b>Please enter your address for deliveries</b></p>
+      <form id="address">
+        <label>Name</label><br>
+        <input type="text" class="form-control" id="Name"><br>
+        <label>Estate</label><br>
+        <input type="text" class="form-control" id="estate"><br>
+        <label>House N0.</label><br>
+        <input type="House number" class="form-control" id="hse"><br>
+        <label>Phone</label><br>
+        <input type="number" class="form-control" id="phone"><br>
+        <button onclick="myFunction()">Confirm Delivery</button>
+      </form><br>
+    </div><br><br>
+
+  </div>
+  <script src="./js/jquery-3.4.1.js" charset="utf-8"></script>
+  <script src="./js/scripts.js" charset="utf-8"></script>
+
+
+
+
+
+
+
+</body>
+
 </html>
