@@ -14,10 +14,10 @@ $(document).ready(function() {
     var pizzatype = $('.type option:selected').val();
     var pizzaCrust = $('.crust option:selected').val();
 
-    var pTopping = [];
+    var pizzaTopping = [];
 
     $.each($("input[name='toppings']:checked"), function() {
-      pTopping.push($(this).val());
+      pizzaTopping.push($(this).val());
     });
     var pizzaTopping = pTopping.length * 100;
     var pizzaTotal = parseInt(pizzatype) + parseInt(pizzaCrust) + parseInt(pizzaTopping);
@@ -32,8 +32,8 @@ $(document).ready(function() {
   $('#order2').click(function() {
     $('#2nd').append('<div class="row">' +
       '<div class="col-md-4">' +
-      '<h4>Order your pizza of choice!</h4>' +
-      '<form id="form" class="size2">' +
+      '<h3>Order</h3>' +
+      '<form id="form" class="type2">' +
       '<select class="form-control">' +
       '<option label="hawaiaan Large  -  1000" value="1000"></option>' +
       '<option label="hawaiaan Medium  -  800" value="800"></option>' +
@@ -71,18 +71,18 @@ $(document).ready(function() {
 
       '<div class="col-md-4">' +
       '<h4>Select Toppings of choice!</h4>' +
-      '<form id="form" class="topping2">' +
+      '<form id="form" class="pizzaToppings2">' +
       '<div class="row">' +
       '<div class="col-md-6">' +
-      '<input type="checkbox" name="toppings2" class="form control" label="Mushrooms" value="150">Mushrooms<br>' +
+      '<input type="checkbox" name="Toppings2" class="form control" label="Mushrooms" value="150">Mushrooms<br>' +
       '<input type="checkbox" name="toppings2" class="form control" label="Onions" value="100">Onions<br>' +
       '<input type="checkbox" name="toppings2" class="form control" label="Sweetcorn" value="150">Sweetcorn<br>' +
-      '<input type="checkbox" name="toppings2" class="form control" label="jalapeno chilli" value="150">jalapeno chilli<br>' +
+      '<input type="checkbox" name="Toppings2" class="form control" label="jalapeno chilli" value="150">jalapeno chilli<br>' +
       '</div>' +
       '<div class="col-md-6">' +
-      '<input type="checkbox" name="toppings2" class="form control" label="Cheese" value="150">Cheese<br>' +
-      '<input type="checkbox" name="toppings2" class="form control" label="green Pepper" value="100">green Pepper<br>' +
-      '<input type="checkbox" name="toppings2" class="form control" label="Olives" value="150">Olives<br>' +
+      '<input type="checkbox" name="Toppings2" class="form control" label="Cheese" value="150">Cheese<br>' +
+      '<input type="checkbox" name="Toppings2" class="form control" label="green Pepper" value="100">green Pepper<br>' +
+      '<input type="checkbox" name="Toppings2" class="form control" label="Olives" value="150">Olives<br>' +
       '</div>' +
       '</div>' +
 
@@ -97,7 +97,7 @@ $(document).ready(function() {
 
         var pizzaToppings2 = [];
 
-        $.each($("input[name='toppings2']:checked"), function() {
+        $.each($("input[name='Toppings2']:checked"), function() {
           pizzaToppings2.push($(this).val());
         });
 

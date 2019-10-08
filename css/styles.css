@@ -3,7 +3,9 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   font-family: sans-serif;
-  color: white;
+  color: #FFFFFF;
+  font-size: 25px;
+
 }
 
 header {
@@ -28,4 +30,7 @@ li {
   margin: auto;
   overflow: hidden;
   margin-top: 1%;
+}
+.location .submit{
+
 }
